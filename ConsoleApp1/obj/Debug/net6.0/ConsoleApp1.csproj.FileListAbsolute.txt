@@ -1,0 +1,14 @@
+D:\Учеба\оаип артамонова\ConsoleApp1\bin\Debug\net6.0\ConsoleApp1.exe
+D:\Учеба\оаип артамонова\ConsoleApp1\bin\Debug\net6.0\ConsoleApp1.deps.json
+D:\Учеба\оаип артамонова\ConsoleApp1\bin\Debug\net6.0\ConsoleApp1.runtimeconfig.json
+D:\Учеба\оаип артамонова\ConsoleApp1\bin\Debug\net6.0\ConsoleApp1.dll
+D:\Учеба\оаип артамонова\ConsoleApp1\bin\Debug\net6.0\ConsoleApp1.pdb
+D:\Учеба\оаип артамонова\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig
+D:\Учеба\оаип артамонова\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.AssemblyInfoInputs.cache
+D:\Учеба\оаип артамонова\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.AssemblyInfo.cs
+D:\Учеба\оаип артамонова\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.csproj.CoreCompileInputs.cache
+D:\Учеба\оаип артамонова\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.dll
+D:\Учеба\оаип артамонова\ConsoleApp1\obj\Debug\net6.0\refint\ConsoleApp1.dll
+D:\Учеба\оаип артамонова\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.pdb
+D:\Учеба\оаип артамонова\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.genruntimeconfig.cache
+D:\Учеба\оаип артамонова\ConsoleApp1\obj\Debug\net6.0\ref\ConsoleApp1.dll

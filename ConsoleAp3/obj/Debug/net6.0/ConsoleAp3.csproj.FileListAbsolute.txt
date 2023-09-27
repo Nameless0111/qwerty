@@ -1,0 +1,14 @@
+D:\Учеба\оаип артамонова\ConsoleAp3\obj\Debug\net6.0\ConsoleAp3.GeneratedMSBuildEditorConfig.editorconfig
+D:\Учеба\оаип артамонова\ConsoleAp3\obj\Debug\net6.0\ConsoleAp3.AssemblyInfoInputs.cache
+D:\Учеба\оаип артамонова\ConsoleAp3\obj\Debug\net6.0\ConsoleAp3.AssemblyInfo.cs
+D:\Учеба\оаип артамонова\ConsoleAp3\obj\Debug\net6.0\ConsoleAp3.csproj.CoreCompileInputs.cache
+D:\Учеба\оаип артамонова\ConsoleAp3\bin\Debug\net6.0\ConsoleAp3.exe
+D:\Учеба\оаип артамонова\ConsoleAp3\bin\Debug\net6.0\ConsoleAp3.deps.json
+D:\Учеба\оаип артамонова\ConsoleAp3\bin\Debug\net6.0\ConsoleAp3.runtimeconfig.json
+D:\Учеба\оаип артамонова\ConsoleAp3\bin\Debug\net6.0\ConsoleAp3.dll
+D:\Учеба\оаип артамонова\ConsoleAp3\bin\Debug\net6.0\ConsoleAp3.pdb
+D:\Учеба\оаип артамонова\ConsoleAp3\obj\Debug\net6.0\ConsoleAp3.dll
+D:\Учеба\оаип артамонова\ConsoleAp3\obj\Debug\net6.0\refint\ConsoleAp3.dll
+D:\Учеба\оаип артамонова\ConsoleAp3\obj\Debug\net6.0\ConsoleAp3.pdb
+D:\Учеба\оаип артамонова\ConsoleAp3\obj\Debug\net6.0\ConsoleAp3.genruntimeconfig.cache
+D:\Учеба\оаип артамонова\ConsoleAp3\obj\Debug\net6.0\ref\ConsoleAp3.dll
