@@ -1,110 +1,245 @@
 ﻿
 
-using System;
-int q;
+
+string[] dates = new string[]{
+    "18.10.2023", "19.10.2023", "20.10.2023", "21.10.2023", "22.10.2023", "23.10.2023"};
+int date = 3;
+int position = 0;
+int z = 1;
+int d = 1;
+int p = 0;
+ConsoleKeyInfo key = Console.ReadKey();
+
+int smena_dat(int date)
+{
+    p = 0;
+    switch (z)
+    {
+        case 0:
+            date--;
+            if (date == -1)
+            {
+                date++;
+            }
+            break;
+        case 1:
+            date++;
+            if (date == 6)
+            {
+                date--;
+            }
+            break;
+    }
+    return date;
+}
+void Datess(int date)
+{
+    string[] dates = new string[]
+    {
+    "18.10.2023", "19.10.2023", "20.10.2023", "21.10.2023", "22.10.2023", "23.10.2023"};
+    if (date == 0)
+    {
+        Console.WriteLine(dates[0]);
+        Console.SetCursorPosition(0, 1);
+
+    }
+    if (date == 1)
+    {
+        Console.WriteLine(dates[1]);
+        Console.SetCursorPosition(0, 1);
+
+    }
+    else if (date == 2)
+    {
+        Console.WriteLine(dates[2]);
+        Console.SetCursorPosition(0, 1);
+
+    }
+    else if (date == 3)
+    {
+        Console.WriteLine(dates[3]);
+        if (p == 0)
+        {
+            Console.WriteLine("->1. Сходи погуляй с другом.");
+            p++;
+        }
+        else
+        {
+            Console.WriteLine("  1. Сходи погуляй с другом.");
+            position++; ;
+        }
+        Console.WriteLine("  2. Сходи в магазин.");
+        Console.SetCursorPosition(0, 1);
+    }
+    else if (date == 4)
+    {
+        Console.WriteLine(dates[4]);
+        Console.WriteLine("->1. Сделай практическую по Шарпу.");
+
+        Console.SetCursorPosition(0, 1);
+    }
+    else if (date == 5)
+    {
+        Console.WriteLine(dates[5]);
+
+        Console.WriteLine("->1. Ты хотел почитать.");
+        Console.SetCursorPosition(0, 1);
+    }
+
+}
+int w = 1;
+void Description(int date)
+{
+    if (d == 1)
+    {
+            if (date == 3)
+        {
+            if (position == 1)
+            {
+
+                Console.WriteLine("  1.Сходи погуляй с другом.");
+                Console.WriteLine("--------------------------------");
+                Console.WriteLine("Просто иди погуляй");
+                Console.WriteLine("Дата: ");
+                Console.WriteLine(dates[3]);
+            }
+            else if (position == 2)
+            {
+                Console.WriteLine("  2. Сходи в магазин.");
+                Console.WriteLine("--------------------------------");
+                Console.WriteLine("надо сделать дз");
+                Console.WriteLine("Дата: ");
+                Console.WriteLine(dates[3]);
+            }
+            else position = 2;
+            d = 0;
+        }
+        else if (date == 4)
+        {
+            if (position == 1)
+            {
+
+                Console.WriteLine("  1. Сделай практическую по Шарпу.");
+                Console.WriteLine("--------------------------------");
+                Console.WriteLine("Или получишь 2");
+                Console.WriteLine("Дата: ");
+                Console.WriteLine(dates[4]);
+            }
+            else position = 1;
+            d = 0;
+        }
+        else if (date == 5)
+        {
+            if (position == 1)
+            {
+
+                Console.WriteLine("1.Ты хотел почитать.");
+                Console.WriteLine("--------------------------------");
+                Console.WriteLine("Читать полезно.");
+                Console.WriteLine(dates[5]);
+            }
+            else position = 1;
+            d = 0;
+        }
+        else
+        {
+            Console.WriteLine("  На этот день нет заметок.");
+            d = 0;
+        }
+
+
+    }
+}
+void strelochka(int w)
+{
+    if (w == 1)
+    {
+        position--;
+        if (date != 3)
+        {
+            position = 1;
+            if (date != 5 && date != 4)
+            {
+                position = 1;
+            }
+        }
+        if (position <= 0)
+        {
+            position = 1;
+        }
+    }
+    else if (w == 2)
+    {
+        position++;
+        if (date != 3 && date != 4)
+        {
+            position = 1;
+            if (date != 5)
+            {
+                position = 1;
+            }
+        }
+        if (position == 3)
+        {
+            position--;
+        }
+    }
+    else if (w == 0)
+    {
+        position = position;
+    }
+    Console.SetCursorPosition(0, position);
+    if (date != 0 && date != 1 && date != 2)
+    {
+        Console.WriteLine("->");
+    }
+}
+ConsoleKeyInfo key1;
 do
 {
-    Console.WriteLine("Уважаемый пользователь, при вводе символов не являющихся цифрами, а также знаками (+ - ,) , всю ответственность за проиисходящие далее события вы берёте на себя!");
-    Console.WriteLine("Выберите необходимую операцию:");
-    Console.WriteLine("1. Сложить 2 числа");
-    Console.WriteLine("2. Вычесть первое из второго");
-    Console.WriteLine("3. Перемножить два числа");
-    Console.WriteLine("4. Разделить первое на второе");
-    Console.WriteLine("5. Возвести в степень N первое число");
-    Console.WriteLine("6. Найти квадратный корень из числа");
-    Console.WriteLine("7. Найти 1 процент от числа");
-    Console.WriteLine("8. Найти факториал из числа");
-    Console.WriteLine("9. Выйти из программы");
-    Console.WriteLine("Введите номер желаемой операции:");
-    int z = int.Parse(Console.ReadLine());
-    q = z;
-
-    do
+    key1 = Console.ReadKey(true); switch (key1.Key)
     {
-        switch (z)
-        {
-            case 1:
-                Console.WriteLine("Введите желаемые значения:");
-                string c1 = Console.ReadLine();
-                string c2 = Console.ReadLine();
-                double e1 = Convert.ToDouble(c1);
-                double e2 = Convert.ToDouble(c2);
-                double e = e1 + e2;
-                Console.WriteLine("Результат операции:" + e);
+        case ConsoleKey.LeftArrow:
+            z = 0;
+
+            Console.Clear();
+            date = smena_dat(date);
+            Datess(date);
+            break;
+        case ConsoleKey.RightArrow:
+            z = 1;
+            Console.Clear();
+            date = smena_dat(date);
+            Datess(date);
+            break;
+        case ConsoleKey.UpArrow:
+            w = 1;
+            Console.Clear();
+            Datess(date);
+            strelochka(w);
+            break;
+        case ConsoleKey.DownArrow:
+            w = 2;
+            Console.Clear();
+            Datess(date);
+            strelochka(w);
+            break;
+        case ConsoleKey.Enter:
+            if (d == 1)
+            {
+                Console.Clear();
+                Description(date);
                 break;
-            case 2:
-                Console.WriteLine("Введите желаемые значения:");
-                string c3 = Console.ReadLine();
-                string c4 = Console.ReadLine();
-                double e3 = Convert.ToDouble(c3);
-                double e4 = Convert.ToDouble(c4);
-                double ea = e4 - e3;
-                Console.WriteLine("Результат операции:" + ea);
+            }
+            else if (d == 0)
+            {
+                Console.Clear();
+                Datess(date);
+                w = 0;
+                strelochka(w);
+                d = 1;
                 break;
-            case 3:
-                Console.WriteLine("Введите желаемые значения:");
-                string c5 = Console.ReadLine();
-                string c6 = Console.ReadLine();
-                double e5 = Convert.ToDouble(c5);
-                double e6 = Convert.ToDouble(c6);
-                double eb = e5 * e6;
-                Console.WriteLine("Результат операции:" + eb);
-                break;
-            case 4:
-                Console.WriteLine("Введите желаемые значения:");
-                string c7 = Console.ReadLine();
-                string c8 = Console.ReadLine();
-                double e7 = Convert.ToDouble(c7);
-                double e8 = Convert.ToDouble(c8);
-                if (e8 == 0)
-                {
-                    Console.WriteLine("Делить на 0 запрещено");
-                    break;
-                }
-                double eс = e7 / e8;
-                Console.WriteLine("Результат операции:" + eс);
-                break;
-            case 5:
-                Console.WriteLine("Введите желаемое значение:");
-                string c9 = Console.ReadLine();
-                Console.WriteLine("Введите желаемую степень N:");
-                string c10 = Console.ReadLine();
-                double e9 = Convert.ToDouble(c9);
-                double e10 = Convert.ToDouble(c10);
-                double ed = Math.Pow(e9, e10);
-                Console.WriteLine("Результат операции:" + ed);
-                break;
-            case 6:
-                Console.WriteLine("Введите желаемое значение:");
-                string c11 = Console.ReadLine();
-                double e11 = Convert.ToDouble(c11);
-                double ee = Math.Sqrt(e11);
-                Console.WriteLine("Результат операции:" + ee);
-                break;
-            case 7:
-                Console.WriteLine("Введите желаемое значение:");
-                string c12 = Console.ReadLine();
-                double e12 = Convert.ToDouble(c12);
-                double ef = e12 / 100;
-                Console.WriteLine("Результат операции:" + ef);
-                break;
-            case 8:
-                Console.WriteLine("Введите желаемое значение:");
-                string c13 = Console.ReadLine();
-                double e13 = Convert.ToDouble(c13);
-                for (double i = e13; i > 1; i--)
-                {
-                    e13 = e13 * (i - 1);
-                }
-                if (e13 >= 0)
-                {
-                    double eg = e13;
-                    Console.WriteLine("Результат операции:" + eg);
-                }
-                break;
-        }
-        break;
-    } while ( z != 9);
-    
-} while (q != 9);
-Console.WriteLine("Спасибо, что выбрали эту программу!");
+            }
+            break;
+    }
+} while (key1.Key != ConsoleKey.Escape);
